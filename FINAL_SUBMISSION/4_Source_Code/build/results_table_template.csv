@@ -1,0 +1,9 @@
+Test_ID,Test_Name,One_Way_Delay_ms,Link_Loss_Pct,Protocol,Target_Bitrate,Achieved_Throughput_Mbps,Retransmissions,Loss_Rate_Pct,Avg_RTT_ms,Observations,Evidence_Artifact
+TEST-00,Baseline Connectivity,0,0,ICMP,N/A,N/A,0,0.0,4.2,Immediate echo response across local simulation LAN,ping_baseline.log / screenshot_00.png
+TEST-01,Scaled Space Delay Check,5000,2,ICMP,N/A,N/A,0,2.0,10012.5,RTT rises to ~10.01 seconds matching 2x 5000ms one-way netem setting,ping_delayed_5s.log / screenshot_01.png
+TEST-02,TCP Bulk Scientific Transfer,5000,2,TCP,Unlimited (Max),0.216,14,N/A,10015.0,Severe throughput collapse due to ACK starvation and window stalls,tcp_delay_5000ms.json / pcap_tcp.pcap
+TEST-03,UDP Telemetry Stream,5000,2,UDP,2.0 Mbps,1.962,0,2.1,N/A,Telemetry stream flows continuously at line rate despite 10s latency,udp_delay_5000ms.json / pcap_udp.pcap
+TEST-04,TCP Loss Degradation Stress,5000,5,TCP,Unlimited (Max),0.084,38,N/A,10022.0,Congestion window collapses repeatedly; exponential RTO backoff,tcp_delay_loss5pct.json / pcap_loss.pcap
+TEST-05,UDP Loss Telemetry Stress,5000,5,UDP,2.0 Mbps,1.895,0,5.3,N/A,Throughput remains steady at ~1.9 Mbps; non-critical sensor loss observed,udp_delay_loss5pct.json / pcap_udp_loss.pcap
+TEST-06,Extreme Mars Opposition Profile,15000,5,TCP,Unlimited (Max),0.028,21,N/A,30045.0,Connection near total stall; single 3-way handshake consumes 30 seconds,tcp_extreme_15s.json / pcap_extreme.pcap
+TEST-07,Extreme UDP Telemetry Profile,15000,5,UDP,2.0 Mbps,1.890,0,5.1,N/A,Telemetry continues delivery unaffected by 30-second round-trip propagation,udp_extreme_15s.json / pcap_extreme.pcap

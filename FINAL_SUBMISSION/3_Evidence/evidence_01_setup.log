@@ -1,0 +1,39 @@
+[*] Tearing down Project ARES namespaces and virtual links...
+[+] Teardown complete. All namespaces removed.
+==================================================================
+    PROJECT ARES: INSTANT SINGLE-MACHINE NAMESPACE LAB BUILDER    
+==================================================================
+[+] Creating 5 network namespaces...
+[+] Creating virtual cable pairs (veth)...
+[+] Connecting interfaces to respective nodes...
+[+] Configuring [Mars Host] (192.168.10.10/24)...
+[+] Configuring [Mars Router]...
+[+] Configuring [Space Emulator]...
+[+] Configuring [Earth Router]...
+[+] Configuring [Earth Server] (10.10.10.10/24)...
+
+==================================================================
+ [SUCCESS] 5-Node Interplanetary Network Emulation is ACTIVE!    
+==================================================================
+ How to execute commands within each node:
+   - On Mars Host      : sudo ip netns exec mars_host <command>
+   - On Space Emulator : sudo ip netns exec space_emulator <command>
+   - On Earth Server   : sudo ip netns exec earth_server <command>
+
+ Immediate Baseline Ping Test:
+PING 10.10.10.10 (10.10.10.10) 56(84) bytes of data.
+64 bytes from 10.10.10.10: icmp_seq=1 ttl=61 time=0.050 ms
+64 bytes from 10.10.10.10: icmp_seq=2 ttl=61 time=0.098 ms
+64 bytes from 10.10.10.10: icmp_seq=3 ttl=61 time=0.039 ms
+
+--- 10.10.10.10 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2067ms
+rtt min/avg/max/mdev = 0.039/0.062/0.098/0.025 ms
+------------------------------------------------------------------
+ To inject Space Link Delay (Profile A):
+   sudo ip netns exec space_emulator tc qdisc add dev se_eth0 root netem delay 5000ms loss 2% limit 10000
+   sudo ip netns exec space_emulator tc qdisc add dev se_eth1 root netem delay 5000ms loss 2% limit 10000
+
+ To teardown:
+   sudo /mnt/c/Users/shrey/Downloads/DCN_CP/build/setup_namespaces.sh teardown
+==================================================================

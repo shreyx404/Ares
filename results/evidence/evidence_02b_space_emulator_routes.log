@@ -1,0 +1,9 @@
+=== Interfaces ===
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+se_eth0@if6      UP             172.16.1.2/30 fe80::cf5:63ff:fe4a:c4c7/64 
+se_eth1@if7      UP             172.16.2.1/30 fe80::6873:d8ff:fe6c:7b39/64 
+=== Routes ===
+10.10.10.0/24 via 172.16.2.2 dev se_eth1 
+172.16.1.0/30 dev se_eth0 proto kernel scope link src 172.16.1.2 
+172.16.2.0/30 dev se_eth1 proto kernel scope link src 172.16.2.1 
+192.168.10.0/24 via 172.16.1.1 dev se_eth0 

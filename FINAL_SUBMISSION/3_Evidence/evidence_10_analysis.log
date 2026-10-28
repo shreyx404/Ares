@@ -1,0 +1,27 @@
+[+] Loading TCP log: /mnt/c/Users/shrey/Downloads/DCN_CP/results/test_tcp.json
+[+] Loading UDP log: /mnt/c/Users/shrey/Downloads/DCN_CP/results/test_udp.json
+[+] Exported interval time-series: results/parsed_iperf_intervals.csv
+[+] Exported test summary table : results/parsed_iperf_summary.csv
+[SUCCESS] High-resolution comparative graph saved: tcp_vs_udp_throughput.png
+
+======================================================================
+            PROJECT ARES -- INTERPLANETARY PROTOCOL ANALYSIS       
+======================================================================
+ Scaled One-Way Delay     : 5,000 ms (RTT: 10.0 seconds)
+ Nominal Space Bandwidth  : 2.0 Mbps
+ Theoretical Link BDP     : 20,000,000 bits (2,500,000 Bytes / 2.38 MB)
+----------------------------------------------------------------------
+ PROTOCOL PERFORMANCE MATRIX:
+ | Protocol | Mean Throughput | Retransmits | Loss (%) | Jitter (ms) |
+ |:---------|:---------------:|:-----------:|:--------:|:-----------:|
+ | TCP Bulk |  0.545 Mbps     |           4 |      N/A |         N/A |
+ | UDP CBR  |  2.000 Mbps     |         N/A |   2.34% |    16.49 ms |
+----------------------------------------------------------------------
+ KEY THEORETICAL FINDINGS:
+ 1. TCP Window Starvation: Standard TCP sliding window size defaults to 64KB,
+    falling far short of the required 2441.4 KB BDP pipe size.
+    Because ACK packets take 10 seconds to return, the sender stalls.
+ 2. UDP Telemetry Resilience: UDP continuously transmits without ACK handshakes,
+    maintaining mission-critical sensor throughput despite extreme delay.
+======================================================================
+

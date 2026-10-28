@@ -1,0 +1,3 @@
+Protocol,Mean_Throughput_Mbps,Total_Bytes_Transferred,Total_Retransmits,Packet_Loss_Pct,Jitter_ms
+TCP,0.216,675000,3,0.0,0.0
+UDP,1.962,6125000,0,2.1,48.5

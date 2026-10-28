@@ -1,0 +1,2 @@
+se_eth0: qdisc netem 8001: root refcnt 17 limit 10000 delay 2.5s  25ms loss 2%
+se_eth1: qdisc netem 8002: root refcnt 17 limit 10000 delay 2.5s  25ms loss 2%

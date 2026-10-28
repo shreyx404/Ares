@@ -1,0 +1,155 @@
+tcp   LISTEN 0      4096               *:5201            *:*          
+-----------------------------------------------------------
+Server listening on 5201 (test #1)
+-----------------------------------------------------------
+iperf3: error - unable to receive parameters from client: 
+-----------------------------------------------------------
+Server listening on 5201 (test #2)
+-----------------------------------------------------------
+Accepted connection from 192.168.10.10, port 47274
+[  6] local 10.10.10.10 port 5201 connected to 192.168.10.10 port 53266
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6]   0.00-1.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   1.00-2.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   2.00-3.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   3.00-4.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   4.00-5.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   5.00-6.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   6.00-7.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   7.00-8.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   8.00-9.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   9.00-10.00  sec  1.41 KBytes  11.6 Kbits/sec  0.000 ms  2/3 (67%)  
+[  6]  10.00-11.00  sec   233 KBytes  1.91 Mbits/sec  38.161 ms  4/169 (2.4%)  
+[  6]  11.00-12.00  sec   230 KBytes  1.89 Mbits/sec  41.554 ms  10/173 (5.8%)  
+[  6]  12.00-13.00  sec   245 KBytes  2.00 Mbits/sec  41.589 ms  0/173 (0%)  
+[  6]  13.00-14.00  sec   240 KBytes  1.97 Mbits/sec  30.004 ms  4/174 (2.3%)  
+[  6]  14.00-15.00  sec   243 KBytes  1.99 Mbits/sec  30.286 ms  2/174 (1.1%)  
+[  6]  15.00-16.00  sec   239 KBytes  1.96 Mbits/sec  37.060 ms  18446744073709551614/167 (-1.2%)  
+[  6]  16.00-17.00  sec   238 KBytes  1.95 Mbits/sec  32.628 ms  8/176 (4.5%)  
+[  6]  17.00-18.00  sec   232 KBytes  1.90 Mbits/sec  39.594 ms  6/170 (3.5%)  
+[  6]  18.00-19.00  sec   242 KBytes  1.98 Mbits/sec  32.456 ms  7/178 (3.9%)  
+[  6]  19.00-20.00  sec   235 KBytes  1.92 Mbits/sec  40.998 ms  7/173 (4%)  
+[  6]  20.00-21.00  sec   238 KBytes  1.95 Mbits/sec  37.921 ms  18446744073709551613/165 (-1.8%)  
+[  6]  21.00-22.00  sec   236 KBytes  1.93 Mbits/sec  31.286 ms  11/178 (6.2%)  
+[  6]  22.00-23.00  sec   238 KBytes  1.95 Mbits/sec  38.765 ms  1/169 (0.59%)  
+[  6]  23.00-24.00  sec   235 KBytes  1.92 Mbits/sec  35.642 ms  5/171 (2.9%)  
+[  6]  24.00-25.00  sec   246 KBytes  2.02 Mbits/sec  28.022 ms  5/179 (2.8%)  
+[  6]  25.00-26.00  sec   240 KBytes  1.97 Mbits/sec  30.505 ms  2/172 (1.2%)  
+[  6]  26.00-27.00  sec   240 KBytes  1.97 Mbits/sec  37.027 ms  18446744073709551613/167 (-1.8%)  
+[  6]  27.00-28.00  sec   229 KBytes  1.88 Mbits/sec  34.721 ms  14/176 (8%)  
+[  6]  28.00-29.00  sec   243 KBytes  1.99 Mbits/sec  32.104 ms  4/176 (2.3%)  
+[  6]  29.00-30.00  sec   243 KBytes  1.99 Mbits/sec  34.250 ms  18446744073709551613/169 (-1.8%)  
+[  6]  30.00-31.00  sec   240 KBytes  1.97 Mbits/sec  27.214 ms  2/172 (1.2%)  
+[  6]  31.00-32.00  sec   232 KBytes  1.90 Mbits/sec  43.637 ms  12/176 (6.8%)  
+[  6]  32.00-33.00  sec   246 KBytes  2.02 Mbits/sec  43.816 ms  18446744073709551615/173 (-0.58%)  
+[  6]  33.00-34.00  sec   229 KBytes  1.88 Mbits/sec  38.314 ms  8/170 (4.7%)  
+[  6]  34.00-35.00  sec   239 KBytes  1.96 Mbits/sec  34.927 ms  2/171 (1.2%)  
+[  6]  35.00-35.06  sec  11.3 KBytes  1.44 Mbits/sec  33.509 ms  18446744073709551611/3 (-1.7e+02%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-35.1 sec  2928 datagrams received out-of-order
+[  6]   0.00-35.06  sec  5.82 MBytes  1.39 Mbits/sec  33.509 ms  99/4317 (2.3%)  receiver
+iperf3: error - unable to receive control message - port may not be available, the other side may have stopped running, etc.: Bad file descriptor
+-----------------------------------------------------------
+Server listening on 5201 (test #3)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated
+tcp   LISTEN 0      4096               *:5201            *:*          
+-----------------------------------------------------------
+Server listening on 5201 (test #1)
+-----------------------------------------------------------
+iperf3: error - unable to receive parameters from client: 
+-----------------------------------------------------------
+Server listening on 5201 (test #2)
+-----------------------------------------------------------
+iperf3: error - unable to receive parameters from client: 
+-----------------------------------------------------------
+Server listening on 5201 (test #3)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated
+tcp   LISTEN 0      4096               *:5201            *:*          
+-----------------------------------------------------------
+Server listening on 5201 (test #1)
+-----------------------------------------------------------
+Accepted connection from 192.168.10.10, port 38288
+[  6] local 10.10.10.10 port 5201 connected to 192.168.10.10 port 44320
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-1.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  6]   1.00-2.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  6]   2.00-3.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  6]   3.00-4.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  6]   4.00-5.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  6]   5.00-6.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  6]   6.00-7.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  6]   7.00-8.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  6]   8.00-9.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  6]   9.00-10.00  sec  17.0 KBytes   139 Kbits/sec                  
+[  6]  10.00-11.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  11.00-12.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  12.00-13.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  13.00-14.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  14.00-15.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  15.00-16.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  16.00-17.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  17.00-18.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  18.00-19.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  19.00-20.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  20.00-21.00  sec  96.2 KBytes   785 Kbits/sec                  
+[  6]  21.00-22.02  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  22.02-23.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  23.00-24.01  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  24.01-25.00  sec   128 KBytes  1.06 Mbits/sec                  
+[  6]  25.00-26.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  26.00-27.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  27.00-28.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  28.00-29.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  6]  29.00-29.99  sec  0.00 Bytes  0.00 bits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-29.99  sec   241 KBytes  65.9 Kbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5201 (test #2)
+-----------------------------------------------------------
+Accepted connection from 192.168.10.10, port 47598
+[  6] local 10.10.10.10 port 5201 connected to 192.168.10.10 port 46553
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6]   0.00-1.01   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   1.01-2.01   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   2.01-3.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   3.00-4.00   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  
+[  6]   4.00-5.00   sec  1.41 KBytes  11.6 Kbits/sec  0.000 ms  0/1 (0%)  
+[  6]   5.00-6.00   sec   239 KBytes  1.96 Mbits/sec  20.647 ms  4/173 (2.3%)  
+[  6]   6.00-7.00   sec   232 KBytes  1.90 Mbits/sec  16.427 ms  7/171 (4.1%)  
+[  6]   7.00-8.00   sec   238 KBytes  1.95 Mbits/sec  17.752 ms  0/168 (0%)  
+[  6]   8.00-9.00   sec   242 KBytes  1.98 Mbits/sec  14.626 ms  6/177 (3.4%)  
+[  6]   9.00-10.00  sec   239 KBytes  1.96 Mbits/sec  20.137 ms  3/172 (1.7%)  
+[  6]  10.00-11.00  sec   229 KBytes  1.88 Mbits/sec  21.405 ms  8/170 (4.7%)  
+[  6]  11.00-12.00  sec   239 KBytes  1.96 Mbits/sec  17.683 ms  5/174 (2.9%)  
+[  6]  12.00-13.00  sec   246 KBytes  2.02 Mbits/sec  17.145 ms  2/176 (1.1%)  
+[  6]  13.00-14.00  sec   232 KBytes  1.90 Mbits/sec  15.992 ms  3/167 (1.8%)  
+[  6]  14.00-15.00  sec   242 KBytes  1.98 Mbits/sec  15.079 ms  6/177 (3.4%)  
+[  6]  15.00-16.00  sec   239 KBytes  1.96 Mbits/sec  18.656 ms  3/172 (1.7%)  
+[  6]  16.00-17.00  sec   246 KBytes  2.02 Mbits/sec  21.514 ms  18446744073709551615/173 (-0.58%)  
+[  6]  17.00-18.00  sec   242 KBytes  1.98 Mbits/sec  14.752 ms  1/172 (0.58%)  
+[  6]  18.00-19.00  sec   239 KBytes  1.96 Mbits/sec  17.842 ms  4/173 (2.3%)  
+[  6]  19.00-20.00  sec   238 KBytes  1.95 Mbits/sec  14.993 ms  4/172 (2.3%)  
+[  6]  20.00-21.00  sec   239 KBytes  1.96 Mbits/sec  16.775 ms  5/174 (2.9%)  
+[  6]  21.00-22.00  sec   235 KBytes  1.92 Mbits/sec  14.562 ms  4/170 (2.4%)  
+[  6]  22.00-23.00  sec   240 KBytes  1.97 Mbits/sec  20.374 ms  6/176 (3.4%)  
+[  6]  23.00-24.00  sec   235 KBytes  1.92 Mbits/sec  19.002 ms  3/169 (1.8%)  
+[  6]  24.00-25.00  sec   238 KBytes  1.95 Mbits/sec  18.290 ms  9/177 (5.1%)  
+[  6]  25.00-26.00  sec   236 KBytes  1.93 Mbits/sec  18.311 ms  5/172 (2.9%)  
+[  6]  26.00-27.00  sec   240 KBytes  1.97 Mbits/sec  16.419 ms  3/173 (1.7%)  
+[  6]  27.00-28.00  sec   239 KBytes  1.96 Mbits/sec  11.915 ms  2/171 (1.2%)  
+[  6]  28.00-29.00  sec   243 KBytes  1.99 Mbits/sec  17.526 ms  0/172 (0%)  
+[  6]  29.00-30.00  sec   229 KBytes  1.88 Mbits/sec  18.288 ms  9/171 (5.3%)  
+[  6]  30.00-30.04  sec  5.66 KBytes  1.11 Mbits/sec  16.494 ms  0/4 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-30.0 sec  2294 datagrams received out-of-order
+[  6]   0.00-30.04  sec  5.82 MBytes  1.63 Mbits/sec  16.494 ms  101/4317 (2.3%)  receiver
+-----------------------------------------------------------
+Server listening on 5201 (test #3)
+-----------------------------------------------------------
+Accepted connection from 192.168.10.10, port 43880
+iperf3: interrupt - the server has terminated
